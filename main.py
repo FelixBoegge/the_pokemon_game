@@ -10,7 +10,7 @@ max_train = 3                               # max. amount of trainings
 max_healings = 3                            # max. amount of healings
 train_plus = 2                              # +damage when trained
 heal_plus = 3                               # +health when healed
-width_board = len(str(Pokemon.all[0])) - 20 # length of the lines displayed during the game, alligned with length of Pokemon displayed
+width_board = len(str(Pokemon.all[0])) - 26 # length of the lines displayed during the game, alligned with length of Pokemon displayed
 print(len(str(Pokemon.all[0])))
 
 # Variables

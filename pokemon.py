@@ -34,13 +34,13 @@ class Pokemon:
         a = (str(self.num)).rjust(2)
         b = (self.name).ljust(11)
         c = (self.type).ljust(22)
-        d1 = ((self.max_hp - self.hp) * u"\u25FB" + self.hp * u"\u25FC").rjust(12)
+        d1 = ((self.max_hp - self.hp) * u"\u25a1" + self.hp * u"\u25a0").rjust(12)
         d2 = (str(self.hp) + "/" + str(self.max_hp) + "HP").rjust(8)
         e = (str(self.dam)).rjust(2)
         if self.status == 'active':
             f = f"\033[0;32m{self.status}\033[0;0m".rjust(19)
         elif self.status == 'KO':
-            f = f"\033[0;31m{self.status}\033[0;0m".rjust(20)
+            f = f"\033[0;31m{self.status}\033[0;0m".rjust(19)
         return f"#{a} {b}{c}{d1}{d2} Damage: {e} Status: {f}"
 
     # Read Pokemon-Data from file to create them

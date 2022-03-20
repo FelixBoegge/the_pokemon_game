@@ -74,7 +74,7 @@ class Pokemon:
 
     # Train Pokemon to increase Damage
     def train(self, name, add, width):
-        print(width * "\033[0;34;40m-\033[0;37;40m")
+        print(width * "\033[0;34m-\033[0;0m")
         print(f"{name} is training {self.name} (\033[0;33m+{add} Damage\033[0;0m)")
         self.dam += add
         print(f"{self.name} now deals {self.dam} Damage")
